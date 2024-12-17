@@ -5,18 +5,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="Weather App Logo" />
+        <h1>Weather App</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Get real-time weather updates and forecasts for your favorite cities.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          Enter a city name to get the current weather information.
+        </p>
+        <input type="text" placeholder="Enter city name" />
+        <button>Get Weather</button>
+        <div className="weather-info">
+          <h2>Weather Details</h2>
+          <p id="location">Location: </p>
+          <p id="temperature">Temperature: </p>
+          <p id="description">Description: </p>
+        </div>
       </header>
     </div>
   );
